@@ -13,3 +13,25 @@ A function that takes a character as an argument and checks it against the under
 *Should not require any other files*
 */
 
+//function for creating underlying character
+var Letter = function(character) {
+    //string value to store the underlying character for the letter
+    this.character = character;
+    //boolean value that stores whether that letter has been guessed yet
+    this.beenGuessed = false;
+    //function that returns the underlying character if the letter has been guessed, or a placeholder (like an underscore) if the letter has not been guessed
+    this.showGuess = function() {
+        if (this.beenGuessed) {
+            this.beenGuessed = true;
+            //**** maybe use RETURN */
+            console.log(this.character);
+        }
+        else {
+            console.log("_");
+
+        }
+    };
+
+};
+
+module.exports = Letter;
