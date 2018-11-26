@@ -40,5 +40,5 @@ Since this assignment is a command-line application, you don't need to deploy it
 
 ### Techologies Used
 * JavaScript
-** constructors
+''' constructors
 * CLI
